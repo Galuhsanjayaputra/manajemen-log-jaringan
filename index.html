@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Log Jaringan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Manajemen Log Jaringan</h1>
+    </header>
+
+    <!-- Form Input Log -->
+    <section class="input-section">
+        <h2>Tambah Log Jaringan</h2>
+        <form id="logForm">
+            <input type="text" id="ipAddress" placeholder="IP Address" required>
+            <input type="text" id="activity" placeholder="Aktivitas" required>
+            <input type="text" id="status" placeholder="Status (Sukses/Error)" required>
+            <button type="submit">Tambahkan Log</button>
+        </form>
+    </section>
+
+    <!-- Tabel Data Log -->
+    <section class="log-section">
+        <h2>Data Log Jaringan</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>IP Address</th>
+                    <th>Aktivitas</th>
+                    <th>Status</th>
+                    <th>Waktu</th>
+                </tr>
+            </thead>
+            <tbody id="logTableBody">
+                <!-- Data log akan ditambahkan secara dinamis -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
